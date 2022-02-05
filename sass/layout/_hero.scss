@@ -1,9 +1,9 @@
 .hero {
   margin: 0 auto;
-  max-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Img-hero.jpg');
+    url('../images/hero@1x.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,17 +11,24 @@
 }
 
 .hero__container {
-  padding: 200px 0;
+  padding: 118px 0;
+  // padding: 200px 0;
   text-align: center;
 }
 
 .hero__title {
   color: $primaryWhite;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: (42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  max-width: 360px;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
+  // width: 696px;
   margin: 0 auto 30px;
 }

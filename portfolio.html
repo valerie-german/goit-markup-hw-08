@@ -43,6 +43,13 @@
               </svg>
               +38 096 111 11 11</a></li>
         </ul>
+<!-- Бургер для мобильной версии -->
+<button class="head__burger" type="button" data-menu-open>
+  <svg class="head__burger-btn" aria-label="меню">
+    <use href="images/symbol-defs-opt.svg#icon-menu_burger"></use>
+  </svg>
+  </button> 
+
       </div>
     </header>
     <!-- Уникальный контент страницы -->
@@ -275,6 +282,34 @@
         </div>
       </div>
     </footer>
-    </body>
+
+
+    <!-- Мобильное меню -->
+    <div class="mob-menu is-hidden" data-menu>
+      <button class="mob-menu__close" type="button" data-menu-close >
+        <svg class="mob-menu__close--icon" aria-label="закрыть окно">
+          <use href="./images/symbol-defs-opt.svg#icon-close-1"></use>
+        </svg>
+      </button>
+      <ul class="list mob-nav mob-menu__mob-nav">
+        <li class="mob-nav__item"><a class="link mob-nav__link" href="./index.html">Студия</a></li>
+        <li class="mob-nav__item"><a class="link mob-nav__link mob-nav__link--current" href="">Портфолио</a></li>
+        <li class="mob-nav__item"><a class="link mob-nav__link" href="">Контакты</a></li>
+      </ul>
+      <div class="mob-contact-box mob-menu__mob-contact-box">
+      <ul class="list mob-contacts mob-menu__mob-contacts">
+        <li class="mob-contacts__item"> <a class="link mob-contacts__link mob-contacts__link--blue" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mob-contacts__item"> <a class="link mob-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+    <ul class="list mob-social mob-menu__mob-social">
+      <li class="mob-social__item"><a class="link mob-social__link" href="">Instagram</a></li>
+      <li class="mob-social__item"><a class="link mob-social__link" href="">Twitter</a></li>
+      <li class="mob-social__item"><a class="link mob-social__link" href="">Facebook</a></li>
+      <li class="mob-social__item"><a class="link mob-social__link" href="">LinkedIn</a></li>
+    </ul>
+    </div>
     
+    </div>
+    <script src="./js/mob-menu.js"></script>
+    </body>    
     </html>

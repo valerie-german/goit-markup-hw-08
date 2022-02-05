@@ -2,8 +2,8 @@ body {
   background-color: $primaryWhite;
   color: $primaryTextColor;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.03em;
+  // font-size: 16px;
+  // letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
@@ -13,13 +13,13 @@ body {
   list-style: none;
 }
 
-.main{
-  margin-top: 80px;
-}
+// .main{
+//   margin-top: 80px;
+// }
 
-.nav {
-  display: flex;
-}
+// .nav {
+//   display: flex;
+// }
 .section-title,
 .title { 
   color: $titleTextColor;
