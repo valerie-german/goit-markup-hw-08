@@ -1,10 +1,7 @@
 .section__team {
   background-color: $secondaryBgGrey;
 }
-// .team__list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+
 .team__card {
   text-align: center;
   background-color: $primaryWhite;
@@ -13,20 +10,45 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    padding: 0 0 24px;
-  margin-bottom: 30px;
+  padding: 0 0 24px;
+}
 
-  
-  /* Сетка */
-  // width: calc((100% - 90px) / 4);
-  // padding: 0 0 30px;
-  
- 
+@include only-mobile {
+  .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
-  // &:not(:nth-child(4n)) {
-  //   margin-right: 30px;
-  
-  // }
+@include tablet {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team__card {
+    width: calc((100% - 30px) / 2);
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@include desktop {
+  .team__card {
+    width: calc((100% - 90px) / 4);
+    padding: 0 0 30px;
+
+    &:not(:nth-child(4n)) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@include only-tablet {
+  .team__card:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__desc {
@@ -34,10 +56,16 @@
   margin: 30px 0 16px;
 }
 
+// @include desktop {
+// .team__desc {
+//   padding: 30px 0 16px;
+// }
+// }
+
 /* Иконки соц. сетей */
 .team__social-media {
   display: inline-flex;
-  color:$iconColor;
+  color: $iconColor;
 
   > .team__item:not(:last-child) {
     margin-right: 10px;

@@ -38,6 +38,13 @@
   transition: transform $transitDur $transitTimeFunct,
     opacity $transitDur $transitTimeFunct 100ms;
 }
+
+@include desktop{
+  .modal {    
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal__close {
   position: absolute;
   top: 8px;
@@ -126,6 +133,14 @@
   margin-bottom: 20px;
 }
 
+@include desktop {
+  .form__comment-box {
+    margin-bottom: 10px
+    
+  }
+  
+}
+
 .form__input-field {
   display: flex;
   width: 100%;
@@ -175,6 +190,15 @@
   font-size: 12px;
   line-height: (14 / 12);
   outline: none;
+}
+
+@include desktop{
+  .form__agreement {
+    
+    font-size: 14px;
+    line-height: 1.71;
+   
+  }
 }
 .form__agreement-link {
   color: $accentColor;

@@ -1,3 +1,5 @@
+
+
 .head__burger{
     background-color: $primaryWhite;
     border: none;
@@ -13,4 +15,14 @@
     &:focus{
         fill: $accentColor;
     }    
+}
+@include tablet{
+    .head__burger{
+        display: none;
+    }
+}
+@include desktop{
+    .head__burger{
+        display: none;
+    }
 }

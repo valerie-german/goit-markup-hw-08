@@ -5,9 +5,14 @@
   font-size: 28px;
   line-height: (33 / 28);
   margin-bottom: 30px;
-  // font-size: 36px;
-  // line-height: calc(42 / 36);  
-  // margin-bottom: 50px;
+  
+}
+@include desktop {
+  .section__title {
+    font-size: 36px;
+    line-height: calc(42 / 36);  
+    margin-bottom: 50px;
+  }
 }
 
 // .title {

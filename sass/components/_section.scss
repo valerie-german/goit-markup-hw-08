@@ -2,3 +2,8 @@
   padding: 60px 0;
   // padding: 94px 0;
 }
+@include desktop {
+  .section {
+    padding: 94px 0;
+  }
+}
