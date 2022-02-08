@@ -1,15 +1,15 @@
 .head {
-   background-color: $primaryWhite;
+  background-color: $primaryWhite;
   border-bottom: 1px solid #ececec;
   width: 100%;
 }
 
-@include desktop{
+@include desktop {
   .head {
     position: fixed;
     z-index: 5;
-     top: 0;
-     }
+    top: 0;
+  }
 }
 
 .logo {
@@ -19,14 +19,14 @@
   font-weight: 700;
   font-size: 24px;
   line-height: (28 / 24);
-  
+
   letter-spacing: 0.03em;
 }
-@include desktop{
+@include desktop {
   .logo {
     font-size: 26px;
     line-height: 1.19;
-      }
+  }
 }
 .head__logo {
   .head__logo--black {
@@ -48,7 +48,6 @@
     margin-right: 88px;
     padding: 26px 0;
   }
- 
 
   .head__site-nav {
     display: flex;
@@ -88,7 +87,7 @@
     line-height: (14 / 12);
 
     letter-spacing: 0.02em;
-   
+
     transition: color $transitDur $transitTimeFunct;
 
     &:hover,
@@ -96,9 +95,6 @@
       color: $accentColor;
     }
   }
-
-  
-  
 
   .contacts__icon {
     margin-right: 10px;
@@ -129,18 +125,17 @@
 
 @include desktop {
   .head__contacts {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-    }
-  
-    .contacts__item:not(:last-child) {
-      margin-right: 30px;
-    }
-    .head__contacts .contacts__link {
-      
-      padding: 32px 0;
-      font-size: 14px;
-      line-height: 1.14;
-    }
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .head__contacts .contacts__link {
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
