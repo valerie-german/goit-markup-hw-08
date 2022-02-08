@@ -10,6 +10,11 @@
   background-color: #c4c4c4;
 }
 
+.hero__button {
+  min-width: 200px;
+  height: 50px;
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -79,20 +84,38 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
-  // width: 696px;
   margin: 0 auto 30px;
 }
 
-@include only-tablet {
+@media screen and (max-width: 479px) {
+  .hero__title {
+    width: 100%;
+  }
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 0 20px;
+  }
+  .hero__button {
+    display: block;
+    min-width: 200px;
+    min-height: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .hero__title {
     width: 360px;
   }
 }
+// @include only-tablet {
+//   .hero__title {
+//     width: 360px;
+//   }
+// }
 
 @include desktop {
   .hero__title {

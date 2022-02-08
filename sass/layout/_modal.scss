@@ -35,12 +35,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  transition: transform $transitDur $transitTimeFunct,
-    opacity $transitDur $transitTimeFunct 100ms;
+  transition: transform $transitDur $transitTimeFunct, opacity $transitDur $transitTimeFunct 100ms;
 }
 
-@include desktop{
-  .modal {    
+@include desktop {
+  .modal {
     width: 528px;
     height: 581px;
   }
@@ -58,7 +57,6 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $primaryWhite;
   cursor: pointer;
- 
 
   &:hover .modal__close--icon,
   &:focus .modal__close--icon {
@@ -101,7 +99,7 @@
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.17;
-  color: $primaryTextColor;  
+  color: $primaryTextColor;
 }
 
 .form__icon {
@@ -125,7 +123,6 @@
   display: flex;
   position: relative;
   color: $titleTextColor;
-  
 }
 
 .form__comment-box {
@@ -135,10 +132,8 @@
 
 @include desktop {
   .form__comment-box {
-    margin-bottom: 10px
-    
+    margin-bottom: 10px;
   }
-  
 }
 
 .form__input-field {
@@ -162,7 +157,7 @@
 .comment-box__comment {
   display: flex;
   width: 100%;
-  
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -192,12 +187,10 @@
   outline: none;
 }
 
-@include desktop{
+@include desktop {
   .form__agreement {
-    
     font-size: 14px;
     line-height: 1.71;
-   
   }
 }
 .form__agreement-link {
@@ -225,7 +218,7 @@
   .form__agreement-check:checked + & {
     background-color: $accentColor;
     background-image: url(../images/icons/icomoon/SVG/done.svg);
-
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     border-color: $accentColor;
