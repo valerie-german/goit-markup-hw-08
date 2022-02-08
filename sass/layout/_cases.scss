@@ -109,6 +109,13 @@
   color: $primaryWhite;
 }
 
+@media screen and (max-width: 390px) {
+  .cases__overlay--text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
 .cases__desc {
   background-color: var(--primary-white-color);
   padding: 20px 24px;

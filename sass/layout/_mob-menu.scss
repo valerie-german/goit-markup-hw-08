@@ -61,14 +61,15 @@
 
 .mob-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-social__item:not(:last-child) {
   margin-right: 10px;
 }
-.mob-social__item:not(:nth-child(1)) {
-  padding-left: 10px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+.mob-social__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .mob-social__link {
   font-weight: 500;
@@ -76,6 +77,25 @@
   line-height: (22 / 18);
   letter-spacing: 0.02em;
   color: $accentColor;
+}
+
+@media screen and (max-width: 439px) {
+  .mob-social__item:last-child {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 358px) and (max-width: 439px) {
+  .mob-social__item:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .mob-social__item:nth-last-child(2) {
+    margin-top: 10px;
+  }
 }
 
 .mob-menu__mob-contacts {

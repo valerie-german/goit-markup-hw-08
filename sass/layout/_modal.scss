@@ -38,6 +38,12 @@
   transition: transform $transitDur $transitTimeFunct, opacity $transitDur $transitTimeFunct 100ms;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 90%;
+  }
+}
+
 @include desktop {
   .modal {
     width: 528px;
